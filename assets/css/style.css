@@ -1,4 +1,287 @@
-/* univeral call */
+/* univeral call*/
+
 * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+:root {
+    background-color: rgb(22, 21, 21);
+}
+
+
+h1 {
+    color: whitesmoke;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+p {
+    line-height: 1.5em;
+    text-align: center;   
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 4px;
+    
+    
+}
+
+/*top flexbox edits*/
+.span{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.timer {
+    background: gold;
+    display: flex;
+    padding: 15px 50px;
+    align-self: flex-end;
+    font-size: 25px;
+    font-weight: bolder;
+    
+    
+}
+
+#time {
+    background-color: rgb(22, 21, 21);
+    color: gold;
+    padding: 0 20px;
+    margin-left: 10px;
+}
+
+
+#logo {
+    width: 350px;
+    height: 120px;
+    
+}
+
+.scores {
+    font-size: 25px;
+    align-self: flex-end;
+    background: gold ;
+    display: flex;
+    padding: 15px 50px;
+    font-weight: bolder;
+    color: rgb(22, 21, 21);
+    
+}
+
+
+/*hides all "hide" classes*/
+.hide {
+    display: none;
+}
+
+
+
+
+/*main flexbox edits*/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    padding: 10px;
+    background-size: cover;
+}
+
+/*instructions*/
+#quiz-instructions {
+    max-width: 550px;
+    font-size: 20px;
+    
+}
+
+/*start button*/
+#start {
+    font-size: 20px;
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    background: red;
+    color: whitesmoke;
+    border: none;
+}
+
+#start:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+}
+
+
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+
+
+#question-title { 
+    font-size: 30px;
+    max-width: 550px;
+    margin-bottom: 40px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+.choices button {
+    background-color: red;
+    border: none;
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.choices button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+}
+
+
+#end-screen {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
 
 }
+
+#end-screen h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.feedback {
+    color: whitesmoke;
+    font-size: 120%;
+}
+
+#final-score {
+    font-size: 25px;
+    font-weight: bold;
+    color: gold;
+}
+
+#initials {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+}
+
+#submit {
+    background-color: red;
+    font-size: 17px;
+    border: none;
+    width: 80px;
+    color: whitesmoke;
+    height: 25px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+
+}
+
+/*highscores*/
+
+#highscorewrap {
+    height: 650px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#highscores {
+    color: whitesmoke;
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    line-height: 2rem;
+}
+
+
+#high {
+    background-color: gold;
+    width: 280px;
+    text-align: center;
+    height: 40px;
+    border-radius: 4px;
+    color: rgb(22, 21, 21);
+    
+}
+
+#back {
+    background-color: red;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    margin: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#back:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+}
+
+#clear {
+    background-color: red;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#clear:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+}
+
+
+
+
+
