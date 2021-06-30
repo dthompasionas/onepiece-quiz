@@ -19,4 +19,4 @@ THEN I can save my initials and my score
 
 Deployed page:
 
-Github: 
+Github: https://github.com/dthompasionas/onepiece-quiz
