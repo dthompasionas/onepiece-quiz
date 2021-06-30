@@ -19,7 +19,10 @@ var subButton = document.getElementById("submit");
 var fbEl = document.getElementById("feedback");
 //grabs initials
 var initEl = document.getElementById("initials");
-
+//quiz instructions
+var quizinst = document.getElementById("quiz-instructions");
+//highscore
+var highscore = document.getElementById("high");
 
 //---------------------------------------------------
 
@@ -27,8 +30,9 @@ var initEl = document.getElementById("initials");
 //starting
 function play() {
   startScreen.setAttribute("class", "start hide");
-
-  queEL.setAttribute("class", " ");
+  
+  
+  
   timerEl.textContent = time;
   timer = setInterval(function(){
     clock();

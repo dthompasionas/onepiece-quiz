@@ -103,7 +103,11 @@ a {
     height: 400px;
     padding: 10px;
     background-size: cover;
+    width: 100%;
 }
+
+
+
 
 #optitle {
     font-size: 50px;
