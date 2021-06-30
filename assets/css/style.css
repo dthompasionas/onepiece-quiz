@@ -53,6 +53,7 @@ a {
     align-self: flex-end;
     font-size: 25px;
     font-weight: bolder;
+    border-radius: 4px;
     
     
 }
@@ -79,6 +80,7 @@ a {
     padding: 15px 50px;
     font-weight: bolder;
     color: rgb(22, 21, 21);
+    border-radius: 4px;
     
 }
 
@@ -103,10 +105,18 @@ a {
     background-size: cover;
 }
 
+#optitle {
+    font-size: 50px;
+    margin: 10px;
+
+}
+
 /*instructions*/
 #quiz-instructions {
     max-width: 550px;
     font-size: 20px;
+    margin-bottom: 10px;
+    
     
 }
 
@@ -119,6 +129,7 @@ a {
     background: red;
     color: whitesmoke;
     border: none;
+    border-radius: 4px;
 }
 
 #start:hover {
@@ -141,6 +152,7 @@ a {
     font-size: 30px;
     max-width: 550px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .choices {
@@ -167,13 +179,6 @@ a {
 }
 
 
-#end-screen {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    
-
-}
 
 #end-screen h2 {
     display: flex;
@@ -182,10 +187,7 @@ a {
     margin: 15px;
 }
 
-.feedback {
-    color: whitesmoke;
-    font-size: 120%;
-}
+
 
 #final-score {
     font-size: 25px;
@@ -207,6 +209,7 @@ a {
     width: 80px;
     color: whitesmoke;
     height: 25px;
+    border-radius: 4px;
 }
 
 #submit:hover {

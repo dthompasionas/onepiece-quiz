@@ -147,7 +147,7 @@ function choiceClick(answerChoice) {
 
   setInterval(function(){
 
-    fbEl.setAttribute("class", "feedback hide");
+    fbEl.setAttribute("style", "display: flex; align-items: center; flex-direction: column; justify-content: flex-start; color: whitesmoke; font-size: 20px");
 
   }, 500);
 
@@ -260,7 +260,7 @@ function endQuiz() {
   endScreen.setAttribute("class", " ");
 
   // hide questions 
-  queEL.setAttribute("class", "hide");
+  queEL.setAttribute("style", "display: flex; flex-direction: column; align-content: center");
 }
 
 
