@@ -17,6 +17,6 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 
-Deployed page:
+Deployed page: https://dthompasionas.github.io/onepiece-quiz/
 
-Github: https://github.com/dthompasionas/onepiece-quiz
+Github repo: https://github.com/dthompasionas/onepiece-quiz
