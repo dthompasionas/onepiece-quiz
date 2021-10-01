@@ -1,22 +1,40 @@
-# onepiece-quiz
+# onepiece-quiz 
 
-In this assignment we had to create a quiz using HTML, CSS, and JavaScript.
+https://github.com/dthompasionas/onepiece-quiz
 
-## Acceptance Criteria
+# Description
+Using Javascript I created a quiz that deducts 10 seconds for every wrong answer. High scores can be saved at the end.
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
+# Table of Contents
+* [License](#license) 
+* [Installation](#installation)
+* [Tests](#tests)
+* [Usage](#usage)
+* [Contribute](#contribute)
+* [Questions](#questions)
 
-Deployed page: https://dthompasionas.github.io/onepiece-quiz/
+# License 
+This project is licensed with a Unlicensed license.
 
-Github repo: https://github.com/dthompasionas/onepiece-quiz
+![License](https://img.shields.io/badge/License-Unlicensed-blue.svg)
+
+# Installation
+The following necessary dependencies are required to run this app: N/A 
+
+# Tests
+The following command is needed to run test: N/A
+
+# Usage
+In order to use this app, This is a quiz on the Anime One Piece
+
+# Contribute
+Make a pull request and contact me below.
+
+# Screenshot: ![](./assets/images/3.png)
+
+# Questions
+Contact me with any questions here:
+
+*Github: dthompasionas
+
+*email: dthompasionas@gmail.com 
