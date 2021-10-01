@@ -44,6 +44,13 @@ a {
 }
 
 /*top flexbox edits*/
+
+.header-wrap {
+    display: flex;
+    justify-content: center;
+    
+}
+
 .span{
     height: 150px;
     align-items: center;
@@ -59,6 +66,12 @@ a {
     border-radius: 4px;
     
     
+}
+
+.timer-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #time {
@@ -92,6 +105,14 @@ a {
     
 }
 
+.view-score-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .view-score {
     background: gold;
     color: #212529;
@@ -100,8 +121,7 @@ a {
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    
-    
+    text-align: center;
 }
 
 
