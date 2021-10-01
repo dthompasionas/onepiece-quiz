@@ -7,13 +7,22 @@
     
 }
 
+body {
+    background-color: #212529;
+}
+
+.background {
+    height: 100vh;
+}
+
 :root {
-    background-color: rgb(22, 21, 21);
+    background-color: #212529;
 }
 
 
 h1 {
     color: whitesmoke;
+    text-align: center;
 }
 
 h2 {
@@ -36,21 +45,15 @@ a {
 
 /*top flexbox edits*/
 .span{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     height: 150px;
     align-items: center;
-    padding: 10px;
+    
     
 }
 
 .timer {
     background: gold;
-    display: flex;
-    padding: 15px 50px;
-    align-self: flex-end;
+    padding: 10px;
     font-size: 25px;
     font-weight: bolder;
     border-radius: 4px;
@@ -62,13 +65,18 @@ a {
     background-color: rgb(22, 21, 21);
     color: gold;
     padding: 0 20px;
-    margin-left: 10px;
+    
 }
 
+.logo-cont {
+    display: flex;
+    justify-content: center;
+}
 
 #logo {
     width: 350px;
     height: 120px;
+    
     
 }
 
@@ -84,26 +92,22 @@ a {
     
 }
 
+.view-score {
+    background: gold;
+    color: #212529;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+}
+
 
 /*hides all "hide" classes*/
 .hide {
     display: none;
-}
-
-
-
-
-/*main flexbox edits*/
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    padding: 10px;
-    background-size: cover;
-    width: 100%;
 }
 
 
@@ -117,7 +121,6 @@ a {
 
 /*instructions*/
 #quiz-instructions {
-    max-width: 550px;
     font-size: 20px;
     margin-bottom: 10px;
     
@@ -130,15 +133,37 @@ a {
     width: 170px;
     height: 40px;
     margin-top: 20px;
-    background: red;
+    background: rgb(236, 7, 7);
     color: whitesmoke;
     border: none;
     border-radius: 4px;
 }
 
+.start-info {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.start-btn {
+    display: flex;
+    justify-content: center;
+    
+}
+
 #start:hover {
     cursor: pointer;
-    box-shadow: 0 0 12px rgb(202, 52, 52);
+    background-color:  rgb(255, 12, 3);
+    margin-right: 10px;
+}
+
+.start-area {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -224,14 +249,20 @@ a {
 
 /*highscores*/
 
-#highscorewrap {
-    height: 650px;
-    flex-wrap: wrap;
+#high-score-wrap {
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
 }
 
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #highscores {
     color: whitesmoke;
@@ -252,6 +283,12 @@ a {
     height: 40px;
     border-radius: 4px;
     color: rgb(22, 21, 21);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
     
 }
 
@@ -261,7 +298,8 @@ a {
     width: 200px;
     height: 30px;
     border-radius: 4px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
@@ -270,6 +308,7 @@ a {
 #back:hover {
     cursor: pointer;
     box-shadow: 0 0 12px rgb(202, 52, 52);
+    margin-right: 5px;
 }
 
 #clear {
@@ -286,6 +325,7 @@ a {
 #clear:hover {
     cursor: pointer;
     box-shadow: 0 0 12px rgb(202, 52, 52);
+    margin-right: 5px;
 }
 
 

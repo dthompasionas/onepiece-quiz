@@ -32,7 +32,6 @@ function play() {
   startScreen.setAttribute("class", "start hide");
   
   
-  
   timerEl.textContent = time;
   timer = setInterval(function(){
     clock();
@@ -92,7 +91,7 @@ function questionGet() {
     choicesEl.appendChild(choiceButton);
   }
   
-
+ 
 
   //choice 1 event listener
   choicesEl.children[0].addEventListener("click", function(event){
@@ -153,7 +152,7 @@ function choiceClick(answerChoice) {
 
     fbEl.setAttribute("style", "display: flex; align-items: center; flex-direction: column; justify-content: flex-start; color: whitesmoke; font-size: 20px");
 
-  }, 500);
+  }, 100);
 
 
   // next question
