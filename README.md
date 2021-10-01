@@ -2,6 +2,9 @@
 
 https://github.com/dthompasionas/onepiece-quiz
 
+## deployed page 
+https://dthompasionas.github.io/onepiece-quiz/
+
 # Description
 Using Javascript I created a quiz that deducts 10 seconds for every wrong answer. High scores can be saved at the end.
 
