@@ -124,6 +124,12 @@ a {
     text-align: center;
 }
 
+.view-score:hover {
+    color: #212529;
+    margin-left: 5px;
+    box-shadow: #fff 2px 2px 15px;
+}
+
 
 /*hides all "hide" classes*/
 .hide {
