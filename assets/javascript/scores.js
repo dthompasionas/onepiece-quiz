@@ -4,48 +4,36 @@
 var clearButton = document.getElementById("clear");
 
 function showHighscore() {
-    //get from local storage
-    var highScores = JSON.parse(localStorage.getItem("highscores"));
+  //get from local storage
+  var highScores = JSON.parse(localStorage.getItem("highscores"));
 
-    if (highScores != null) {
+  if (highScores != null) {
+    for (var i = 0; i < highScores.length; i++) {
+      // create li tag
+      var scoreList = document.createElement("li");
 
-      for (var i = 0; i < highScores.length; i++) {
+      scoreList.textContent =
+        highScores[i].initials + " - " + highScores[i].score;
 
-        // create li tag 
-        var scoreList = document.createElement("li");
-
-        scoreList.textContent = highScores[i].initials + " - " + highScores[i].score;
-
-        // display 
-        document.getElementById("highscores").appendChild(scoreList);
-      }
-      
-    }else{
-
-      var noScores = document.getElementById("highscores");
-
-      noScores.textContent = "No high scores yet!";     
+      // display
+      document.getElementById("highscores").appendChild(scoreList);
     }
-    
-      
+  } else {
+    var noScores = document.getElementById("highscores");
+
+    noScores.textContent = "No high scores yet!";
+  }
 }
-  
 
-clearButton.addEventListener("click", function() {
-
-    clearScore();
-
+clearButton.addEventListener("click", function () {
+  clearScore();
 });
 
 //clears score
 function clearScore() {
+  localStorage.removeItem("highscores");
 
-    localStorage.removeItem("highscores");
-
-    location.reload();
-    
+  location.reload();
 }
-  
-  
+
 showHighscore();
- 
