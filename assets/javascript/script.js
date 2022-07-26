@@ -2,7 +2,7 @@
 
 //--------------------------------------------------
 
-// variables 
+// varia  les 
 //Grabs start screen
 var startScreen = document.getElementById("start-screen");
 //grabs questions
@@ -23,6 +23,8 @@ var initEl = document.getElementById("initials");
 var quizinst = document.getElementById("quiz-instructions");
 //highscore
 var highscore = document.getElementById("high");
+// restart button
+let restartbtn = document.querySelector(".restart");
 
 //---------------------------------------------------
 
@@ -137,11 +139,13 @@ function choiceClick(answerChoice) {
     time -= 10;
    
     fbEl.textContent = "Incorrect";
+    fbEl.style.color = "red"
     
     
   }  else{
     
     fbEl.textContent = "Correct";
+    fbEl.style.color = "green"
     
   }
 
@@ -152,7 +156,7 @@ function choiceClick(answerChoice) {
 
     fbEl.setAttribute("style", "display: flex; align-items: center; flex-direction: column; justify-content: flex-start; color: whitesmoke; font-size: 20px");
 
-  }, 100);
+  }, 800);
 
 
   // next question
@@ -248,6 +252,13 @@ function saveScore() {
 
 //---------------------------------------------------
 
+function restart() {
+  play();
+
+}
+
+restartbtn.addEventListener("click", play);
+
 function endQuiz() {
 
   // stop timer
@@ -263,7 +274,7 @@ function endQuiz() {
   endScreen.setAttribute("class", " ");
 
   // hide questions 
-  queEL.setAttribute("style", "display: flex; flex-direction: column; align-content: center");
+  queEL.setAttribute("style", "display: none;");
 }
 
 
