@@ -24,7 +24,7 @@ var quizinst = document.getElementById("quiz-instructions");
 //highscore
 var highscore = document.getElementById("high");
 // restart button
-let restartbtn = document.querySelector(".restart");
+let restartbtn = document.querySelector(".restartbtn");
 
 //---------------------------------------------------
 
@@ -139,13 +139,13 @@ function choiceClick(answerChoice) {
     time -= 10;
    
     fbEl.textContent = "Incorrect";
-    fbEl.style.color = "red"
+    fbEl.style.color = "red";
     
     
   }  else{
     
     fbEl.textContent = "Correct";
-    fbEl.style.color = "green"
+    fbEl.style.color = "green";
     
   }
 
@@ -154,9 +154,11 @@ function choiceClick(answerChoice) {
 
   setInterval(function(){
 
-    fbEl.setAttribute("style", "display: flex; align-items: center; flex-direction: column; justify-content: flex-start; color: whitesmoke; font-size: 20px");
+    // fbEl.setAttribute("style", "display: flex; align-items: center; flex-direction: column; justify-content: flex-start; color: whitesmoke; font-size: 20px");
 
-  }, 800);
+    fbEl.setAttribute("class", "hide");
+
+  }, 1000);
 
 
   // next question
@@ -176,16 +178,16 @@ function choiceClick(answerChoice) {
 
 //---------------------------------------------------
 
-function clock() {
-  // update time
-  time--;
-  timerEl.textContent = time;
+// function clock() {
+//   // update time
+//   time--;
+//   timerEl.textContent = time;
 
-  // check if user ran out of time
-  if(time <= 0)
-    endQuiz();
+//   // check if user ran out of time
+//   if(time <= 0)
+//     endQuiz();
   
-}
+// }
 
 //---------------------------------------------------
 
@@ -253,11 +255,18 @@ function saveScore() {
 //---------------------------------------------------
 
 function restart() {
-  play();
+  time = 0;
+  timerEl.textContent = time;
 
+  startScreen.removeAttribute("class", "start hide");
+
+  var endScreen = document.getElementById("end-screen");
+  endScreen.setAttribute("class", "hide");
+
+ 
 }
 
-restartbtn.addEventListener("click", play);
+restartbtn.addEventListener("click", restart);
 
 function endQuiz() {
 
