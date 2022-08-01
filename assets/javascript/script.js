@@ -41,6 +41,8 @@ function play() {
   
   
   questionGet();
+
+  queEL.removeAttribute("style", "display: none;");
   
 }
 
@@ -154,8 +156,6 @@ function choiceClick(answerChoice) {
 
   setInterval(function(){
 
-    // fbEl.setAttribute("style", "display: flex; align-items: center; flex-direction: column; justify-content: flex-start; color: whitesmoke; font-size: 20px");
-
     fbEl.setAttribute("class", "hide");
 
   }, 1000);
@@ -176,18 +176,27 @@ function choiceClick(answerChoice) {
   }
 }
 
-//---------------------------------------------------
 
-// function clock() {
-//   // update time
-//   time--;
-//   timerEl.textContent = time;
+//--------------------Restart game-------------------------------
 
-//   // check if user ran out of time
-//   if(time <= 0)
-//     endQuiz();
+function restart() {
+  time = 0;
+  timerEl.textContent = time;
+
+  startScreen.removeAttribute("class", "start hide");
+
+  var endScreen = document.getElementById("end-screen");
+  endScreen.setAttribute("class", "hide");
+
+  time = questions.length * 12;
+  timer;
+  currentque = 0;
   
-// }
+ 
+}
+
+restartbtn.addEventListener("click", restart)
+
 
 //---------------------------------------------------
 
@@ -203,7 +212,7 @@ function checkEnter(event) {
 //checks when enter is clicked
 initEl.addEventListener("click", checkEnter)
 
-//---------------------------------------------------
+//------------------Save score---------------------------------
 
 function saveScore() {
   var initials = initEl.value.toUpperCase();
@@ -217,7 +226,7 @@ function saveScore() {
 
   }else if (initials.length > 3) {
 
-    alert("Input must be no more than 3 characters");
+    alert("Initials cannot exceed 3 characters");
 
     return;
 
@@ -252,21 +261,7 @@ function saveScore() {
   }
 }
 
-//---------------------------------------------------
-
-function restart() {
-  time = 0;
-  timerEl.textContent = time;
-
-  startScreen.removeAttribute("class", "start hide");
-
-  var endScreen = document.getElementById("end-screen");
-  endScreen.setAttribute("class", "hide");
-
- 
-}
-
-restartbtn.addEventListener("click", restart);
+// ---------------------------quiz end-----------------------------
 
 function endQuiz() {
 

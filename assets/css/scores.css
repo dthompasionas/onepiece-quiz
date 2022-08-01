@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Mochiy Pop One", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/one-piece-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*highscores*/
+
+#high-score-wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#high {
+    background-color: gold;
+    width: 280px;
+    text-align: center;
+    height: 40px;
+    border-radius: 4px;
+    color: rgb(22, 21, 21);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 3px 6px rgb(82, 80, 80);
+}
+  
+#highscores {
+    color: whitesmoke;
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    line-height: 2rem;
+}
+
+#highscores li {
+    text-shadow: 5px 2px 5px rgb(82, 81, 81);
+}
+  
+  
+#back {
+    background-color: red;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+#back:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+    margin-right: 5px;
+}
+  
+#clear {
+    background-color: red;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+  
+#clear:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgb(202, 52, 52);
+    margin-right: 5px;
+}
+  
+
