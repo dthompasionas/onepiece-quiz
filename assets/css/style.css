@@ -8,13 +8,6 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/assets/images/one-piece-background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
 
 h1 {
   text-align: center;
@@ -38,9 +31,14 @@ a {
 
 /*top flexbox edits*/
 
-.header {
-  margin-top: 20px;
+.wrap {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/one-piece-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .content {
   display: flex;
@@ -90,12 +88,9 @@ a {
 .logo-cont {
   display: flex;
   justify-content: center;
+  height: 150px;
 }
 
-#logo {
-  width: 350px;
-  height: 120px;
-}
 
 .scores {
   font-size: 25px;
@@ -117,7 +112,7 @@ a {
 .view-score {
   background: gold;
   color: #212529;
-  min-width: 200px;
+  width: 250px;
   font-size: 20px;
   padding: 10px;
   border-radius: 0.25rem;
@@ -132,6 +127,32 @@ a {
 .view-score:hover {
   color: #fff;
   box-shadow: inset 205px 0 0 0 red;
+}
+
+@media screen and (max-width: 768px) {
+  .timer-wrap {
+    align-items: center;
+  }
+
+  .timer {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .header {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 5px;
+  }
+
+  .logo-cont {
+    height: auto;
+  }
 }
 
 /*hides all "hide" classes*/
@@ -299,7 +320,7 @@ a {
 
 .restart button {
   width: 200px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   font-size: 18px;
   font-family: "Mochiy Pop One", sans-serif;
   box-shadow: inset 0 0 0 0 red;
@@ -310,4 +331,3 @@ a {
   box-shadow: inset 200px 0 0 0 red;
   color: #fff;
 }
-
