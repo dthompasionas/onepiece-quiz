@@ -29,15 +29,16 @@ a {
   margin-left: 4px;
 }
 
-/*top flexbox edits*/
-
-.wrap {
+body {
   height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/assets/images/one-piece-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*top flexbox edits*/
 
 
 .content {
@@ -45,7 +46,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .card {
@@ -130,6 +131,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
   .timer-wrap {
     align-items: center;
   }
@@ -153,6 +158,14 @@ a {
   .logo-cont {
     height: auto;
   }
+}
+
+@media screen and (max-width: 300px) {
+  .card-content {
+    padding: 0;
+  }
+
+  
 }
 
 /*hides all "hide" classes*/
@@ -214,8 +227,6 @@ a {
 }
 
 .start-area {
-  height: 600px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,8 +238,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
-  position: absolute;
 }
 
 #question-title {
@@ -264,6 +273,7 @@ a {
 }
 
 /* end screen */
+
 
 #end-screen p {
   color: black;
@@ -330,4 +340,18 @@ a {
 .restart button:hover {
   box-shadow: inset 200px 0 0 0 red;
   color: #fff;
+}
+
+@media screen and (max-width: 408px) {
+  #end-screen h2 {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+  .choices button {
+    width: 230px;
+    height: auto;
+  }
 }

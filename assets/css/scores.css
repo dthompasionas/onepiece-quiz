@@ -93,5 +93,21 @@ body {
     box-shadow: inset 203px 0 0 0 gold;
     text-shadow: 4px 4px 8px rgb(68, 67, 67);
 }
+
+@media screen and (max-width: 430px) {
+    .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 285px) {
+    #high {
+        width: 200px;
+    }
+}
   
 
