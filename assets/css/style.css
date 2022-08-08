@@ -47,6 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -130,7 +131,7 @@ body {
   box-shadow: inset 215px 0 0 0 red;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
     height: auto;
   }
@@ -144,9 +145,25 @@ body {
   }
 }
 
+@media screen and (max-width: 912px) {
+  .timer {
+    width: auto;
+  }
+
+  body {
+    height: 100vh;
+  }
+}
+
+
+
 @media screen and (max-width: 578px) {
   .header {
     padding: 30px;
+  }
+
+  body {
+    height: auto;
   }
 }
 
